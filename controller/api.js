@@ -7,15 +7,11 @@ module.exports = function(app) {
 
     // MySQL connection
     var con = mysql.createConnection({
-        host: 'mudfoot.doc.stu.mmu.ac.uk',
-        user: 'gabbituj',
-        password: 'queonitH8',
-        database: 'gabbituj',
-        port: '6306'
+        
     });
 
     // MongoDB connection
-    mongoose.connect(`mongodb+srv://Philosofesia:xQO9mODCrC0qthSj@cluster0.recta.mongodb.net/Cluster0?retryWrites=true&w=majority`);
+    mongoose.connect();
     var Schema = mongoose.Schema;
     var commentSchema = new Schema({
         comment: String
